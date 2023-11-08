@@ -1,4 +1,4 @@
-package refactoring.problema3;
+package refactoring.problema3.model;
 
 public class Order {
     private int orderId;

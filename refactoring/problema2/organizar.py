@@ -16,7 +16,7 @@
 import os
 
 def organizar():
-    error_file_path = "./data/error.log"
+    error_file_path = "./refactoring/problema2/data/error.log"
     logs = []
     with open(error_file_path, "r") as f:
         logs += f.readlines()

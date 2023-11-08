@@ -1,4 +1,4 @@
-package refactoring.problema3;
+package refactoring.problema3.model;
 
 public class Product {
     private int itemId;
@@ -15,16 +15,8 @@ public class Product {
         return itemId;
     }
 
-    public void setItemId(int itemId) {
-        this.itemId = itemId;
-    }
-
     public String getItem() {
         return item;
-    }
-
-    public void setItem(String item) {
-        this.item = item;
     }
 
     public int getQuantity() {

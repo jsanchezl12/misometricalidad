@@ -1,0 +1,5 @@
+java -version
+javac -version
+
+javac .\refactoring\problema3\Inventory.java
+java .\refactoring\problema3\Inventory.java

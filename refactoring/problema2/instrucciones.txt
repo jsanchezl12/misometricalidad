@@ -1,0 +1,4 @@
+python -m venv venv
+venv\Scripts\activate
+deactivate
+python .\refactoring\problema2\organizar.py
