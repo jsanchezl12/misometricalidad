@@ -16,25 +16,21 @@
 import os
 
 def organizar():
-    error_file_path = './refactoring/problema2/data/error.log'
-
-    with open(error_file_path, 'r') as f:
-        errores = []
-        
-        lineas = f.readlines()
-        lineas = [line.rstrip().split(' ') for line in lineas]
-
-        for linea in lineas:
-            if linea[0] == 'E' and int(linea[1]) > 50:
-                errores.append(linea)
-
-        errores.sort(key=lambda x: int(x[2]))
-
-        for error in errores:
-            print(' '.join(error))
+    error_file_path = "./data/error.log"
+    logs = []
+    with open(error_file_path, "r") as f:
+        logs += f.readlines()
+    errores = []
+    for linea in logs:
+        partes = linea.rstrip().split(" ")
+        if partes[0] == "E" and int(partes[1]) > 50:
+            errores.append(partes)
+    errores.sort(key=lambda x: (int(x[2]), int(x[1])))
+    for error in errores:
+        print(" ".join(error))
 
 def main():
     organizar()
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

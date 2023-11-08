@@ -1,1 +1,5 @@
 *.sonargraph
+
+venv
+/venv/
+/venv/**
