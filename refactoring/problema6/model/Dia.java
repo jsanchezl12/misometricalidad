@@ -1,4 +1,4 @@
-package refactoring.problema6;
+package refactoring.problema6.model;
 
 import java.util.ArrayList;
 

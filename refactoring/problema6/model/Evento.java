@@ -1,4 +1,4 @@
-package refactoring.problema6;
+package refactoring.problema6.model;
 
 public class Evento {
     private String nombre;

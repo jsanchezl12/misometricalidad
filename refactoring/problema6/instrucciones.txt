@@ -1,0 +1,5 @@
+java -version
+javac -version
+
+javac .\refactoring\problema6\Calendario.java
+java .\refactoring\problema6\Calendario.java
